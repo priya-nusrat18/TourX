@@ -1,0 +1,16 @@
+img.card-img2 {
+    margin-right: 20px;
+    overflow: hidden;
+    max-width: 110px;
+    border-radius: 10px;
+    transition: all 0.4s;
+}
+img.card-img2:hover {
+  transform: scale(1.05);
+  width: 100%;
+}
+.p-wrap {
+    border-radius: 10px;
+    padding: 30px 25px;
+    box-shadow: 0 0 64px rgb(17 17 17 / 10%);
+}

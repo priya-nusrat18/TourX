@@ -1,0 +1,40 @@
+.p-sidebar-form {
+  padding: 30px 25px;
+  background: #fff;
+  -webkit-box-shadow: 0 0 64px rgb(17 17 17 / 10%);
+  box-shadow: 0 0 64px rgb(17 17 17 / 10%);
+  border-radius: 10px;
+}
+.package-d-sidebar h5.package-d-head {
+  font-weight: 700;
+  font-size: 25px;
+  color: #262339;
+  margin-bottom: 30px;
+}
+input.form-control {
+  margin-bottom: 19px;
+}
+select.form-control {
+  margin-bottom: 30px;
+}
+label.MuiInputLabel-root.MuiInputLabel-formControl.MuiInputLabel-animated.MuiInputLabel-shrink.MuiInputLabel-outlined.MuiFormLabel-root.MuiFormLabel-colorPrimary.MuiFormLabel-filled.css-1kty9di-MuiFormLabel-root-MuiInputLabel-root {
+  display: none;
+}
+
+.MuiFormControl-root.MuiTextField-root.css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+  width: 100%;
+}
+.custom-toast{
+  background-color: #ff7f47 !important;
+  color: #fff !important;
+}
+.payment-form label{
+  font-weight: 500;
+  color: #003049 ;
+  font-family: 'Poppins',sans-serif !important;
+  /* margin: 10px 0; */
+  width: 100%;
+}
+.StripeElement {
+  margin: 15px 0px;
+}

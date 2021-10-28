@@ -1,0 +1,20 @@
+
+.info-container.justify-content-center.d-flex {
+  padding: 15px;
+  margin: 28px;
+  background-color: #fff;
+  border: 5px solid #FF7F47;
+  border-radius: 5px;
+}
+
+
+.info-card {
+  background-color: rgba(48,79,71,.9);
+  box-shadow: 0 0 64px rgb(17 17 17 / 10%);
+  transform: translateY(-54px);
+}
+
+.info-icon {
+  color: #FF7F47 !important;
+  font-size: 35px;
+}

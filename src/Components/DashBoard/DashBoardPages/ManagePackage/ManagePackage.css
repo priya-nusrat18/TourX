@@ -1,0 +1,8 @@
+button.btn.delete-btn {
+  background: #ff0000c7;
+  color: white;
+  font-size: 14px;
+}
+.dashboard-box {
+  margin-top: 30px;
+}

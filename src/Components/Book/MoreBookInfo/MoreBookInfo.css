@@ -1,0 +1,65 @@
+li .timeline-index {
+  height: auto;
+  margin-right: 30px;
+  position: relative;
+  z-index: 12;
+}
+li .timeline-index::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 6px;
+  z-index: -1;
+  background: url(../../../image/about-stick-shape.png) no-repeat;
+  background-size: cover;
+}
+ .timeline-index .timeline-circle {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #ff7f47;
+  border: 5px solid #cbd3d1;
+}
+.timeline-content h5 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #262339;
+}
+.timeline-content strong {
+  color: #ff7f47;
+  font-size: 18px;
+  font-weight: 500;
+}
+.timeline-content p {
+  padding: 20px 0;
+}
+.timeline-content ul li {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 180%;
+  color: #a5a5a5;
+}
+.timeline-content ul li i {
+  font-size: 18px;
+  color: #262339;
+  margin-right: 10px;
+}
+
+.timeline-content {
+    padding-bottom: 40px
+;
+}

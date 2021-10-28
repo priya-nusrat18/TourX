@@ -1,0 +1,16 @@
+.user-area {
+  position: absolute;
+  bottom: auto;
+  right: 50px;
+  display: -webkit-flex;
+  display: flex;
+  grid-gap: 10px;
+  gap: 10px;
+  margin-top: 20px;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.user-area img {
+  height: 50px !important;
+  border-radius: 50%;
+}

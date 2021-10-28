@@ -1,0 +1,28 @@
+.AchivmentArea-bg {
+  background-image: url(../../../image/achiv-shape.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.achiv-text {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 32px;
+  color: #fff;
+}
+.achiv-card {
+  padding: 20px;
+  text-align: center;
+  background: #304f47;
+  color: #fff;
+  -webkit-box-shadow: 0 0 64px rgb(17 17 17 / 10%);
+  box-shadow: 0 0 64px rgb(17 17 17 / 10%);
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.achiv-card:hover {
+  transform: translateY(-20px);
+}
+/* p.achiv-text.text-white.mb-3 {
+  min-height: 128px;
+} */

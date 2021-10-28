@@ -1,0 +1,49 @@
+.section-heading h1 {
+  letter-spacing: 1px;
+  font-size: 45px;
+  font-weight: 600;
+}
+img.img-fluid.card-img {
+  transition: all 0.4s;
+  width: 100%;
+  ;
+}
+img.img-fluid.card-img:hover {
+  transform: scale(1.05);
+  width: 100%;
+}
+.card-img-wrapper {
+  overflow: hidden;
+}
+.card-body p {
+  font-size: inherit;
+  font-weight: 500;
+}
+.card-body .rating-text {
+  font-size: 15px;
+}
+svg.svg-inline--fa.fa-star.fa-w-18.mt-1.me-2.text-rating {
+  color: orange !important;
+}
+
+.main-card {
+  transition: all 0.4s;
+}
+.main-card:hover {
+  transform: translateY(-10px);
+}
+
+.card-img-wrapper img {
+  min-height: 244.5px;
+  max-width: fit-content;
+}
+.my-3.me-3.main-card.card h5 {
+  font-size: 16px !important;
+}
+.card-h5{
+  font-size: 16px !important;
+}
+.spinner-box.text-center img {
+  width: 115px
+;
+}
