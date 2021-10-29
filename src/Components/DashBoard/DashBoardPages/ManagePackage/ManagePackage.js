@@ -9,24 +9,6 @@ import swal from 'sweetalert';
 const ManagePackage = () => {
     const [manageServices, setManageServices] = useState([])
 
-    // swal({
-    //     title: "Are you sure?",
-    //     text: "Once deleted, you will not be able to recover this imaginary file!",
-    //     icon: "warning",
-    //     buttons: true,
-    //     dangerMode: true,
-    //   })
-    //   .then((willDelete) => {
-    //     if (willDelete) {
-    //       swal("Poof! Your imaginary file has been deleted!", {
-    //         icon: "success",
-    //       });
-    //     } else {
-    //       swal("Your imaginary file is safe!");
-    //     }
-    //   });
-    
-
     useEffect(() => {
 
         fetch('https://afternoon-lake-94187.herokuapp.com/showPackage')

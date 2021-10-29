@@ -15,7 +15,6 @@ import logo from '../../image/logo.png'
 
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
-import ConfirmationModal from "../Book/PaymentProcess/ConfirmationModal";
   
 
 if (!firebase.apps.length) {
@@ -121,7 +120,6 @@ const LogIn = () => {
         setUser(userDetails);
         setLoggedInUser(userDetails);
       });
-    //   openModal()
   };
 
   const updateUserName = (name) => {
@@ -166,17 +164,7 @@ const LogIn = () => {
             setUser(userDetails);
             setLoggedInUser(userDetails);
           });
-      
   };
- // modal 
-
- const [modalIsOpen, setIsOpen] = useState(false);
- function openModal() {
-     setIsOpen(true);
- }
- function closeModal() {
-     setIsOpen(false);
- }
  
   return (
     <div className="login-section">
@@ -193,6 +181,7 @@ const LogIn = () => {
               style={{ backgroundColor: "#fafafa" }}
               onSubmit={handleSubmit(loginSubmit)}
             >
+              <p className="text-center text-danger">Alert! Continue with Google. <br /> If You Continue with Admin Email for test only.But Don't Abuse! </p>
               <h1>Login Here</h1> 
               <br />
               <input
@@ -247,7 +236,6 @@ const LogIn = () => {
               <button onClick={handleAlertToast} type="submit" className="support-btn mb-2">
               Login
             </button>
-            <ConfirmationModal modalIsOpen={modalIsOpen} closeModal={closeModal} />
             </form>
             
             <p className="mt-3 optional-option">
