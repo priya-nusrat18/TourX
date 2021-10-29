@@ -88,6 +88,7 @@ const SplitCardFrom = ({ handlePayment, setBookIn }) => {
         <>
             <form onSubmit={handleSubmit} className='payment-form'>
                 <h5 className="support-color2 py-3"> Payment Here</h5>
+                <p className="text-danger"> N.B. For trial Card Number  type <br /> 4242 4242 4242 4242</p>
                 <label>
                     Card number
         <CardNumberElement
