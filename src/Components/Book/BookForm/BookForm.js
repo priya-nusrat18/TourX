@@ -1,20 +1,15 @@
-import React, { useState , useContext  , useEffect} from "react";
-import { Row, Col } from "react-bootstrap";
-import "./BookForm.css";
-import { useForm } from "react-hook-form";
-
-
-
-import TextField from "@mui/material/TextField";
 import AdapterDateFns from "@mui/lab/AdapterDateFns";
-import LocalizationProvider from "@mui/lab/LocalizationProvider";
 import DatePicker from "@mui/lab/DatePicker";
-import PaymentProcess from "../PaymentProcess/PaymentProcess";
+import LocalizationProvider from "@mui/lab/LocalizationProvider";
+import TextField from "@mui/material/TextField";
+import React, { useContext, useEffect, useState } from "react";
+import { Col, Row } from "react-bootstrap";
+import { useForm } from "react-hook-form";
 import { UserContext } from "../../../App";
-
+import PaymentProcess from "../PaymentProcess/PaymentProcess";
+import "./BookForm.css";
 
 const BookForm = ({id}) => {
-
   const [ loggedInUser] =useContext(UserContext)
   const {googleName ,email , name}=loggedInUser;
 
@@ -36,7 +31,7 @@ const BookForm = ({id}) => {
   };
   useEffect(() => {
 
-    fetch(`https://afternoon-lake-94187.herokuapp.com/package/${id}`)
+    fetch(`https://tourx-travel-agency.herokuapp.com/package/${id}`)
         .then(res => res.json())
         .then(data => {
             setPackageDetails(data)
@@ -67,7 +62,7 @@ const handleProcessPayment = (paymentId) => {
     console.log(allBookData);
 
     delete allBookData._id;
-    fetch('https://afternoon-lake-94187.herokuapp.com/addOrder' , {
+    fetch('https://tourx-travel-agency.herokuapp.com/addOrder' , {
       method:'POST',
       headers:{
         'Content-Type': 'application/json'

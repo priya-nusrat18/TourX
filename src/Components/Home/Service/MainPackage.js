@@ -1,14 +1,14 @@
-import React , {useState , useEffect} from 'react';
-import './MainPackage.css'
+import React, { useEffect, useState } from 'react';
+import loader from '../../../image/flight-loader.gif';
+import './MainPackage.css';
 import MainPackageDetails from './MainPackageDetails';
-import loader from '../../../image/flight-loader.gif'
 
 const MainPackage = () => {
     const [tourPackage, setTourPackage] = useState([])
     const [spinner, setSpinner] = useState(false);
     useEffect(() => {
 
-        fetch('https://afternoon-lake-94187.herokuapp.com/showPackage')
+        fetch('https://tourx-travel-agency.herokuapp.com/showPackage')
             .then(res => res.json())
             .then(data => {
                 const tourData = data.slice(0,9)

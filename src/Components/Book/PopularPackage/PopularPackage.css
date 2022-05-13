@@ -14,3 +14,17 @@ img.card-img2:hover {
     padding: 30px 25px;
     box-shadow: 0 0 64px rgb(17 17 17 / 10%);
 }
+@media screen and (max-width: 1024px) {
+  .popular-card-wrap.d-flex.align-items-center.mb-4 {
+    display: grid !important;
+    margin-bottom: 20px !important;
+}
+}
+/* @media only screen and (max-width: 576px) and (max-width:375px) { */
+
+@media screen and (max-width: 576px) and (min-width:375px) {
+  .popular-card-wrap.d-flex.align-items-center.mb-4 {
+    display: flex !important;
+    flex-direction: row !important;
+}
+}

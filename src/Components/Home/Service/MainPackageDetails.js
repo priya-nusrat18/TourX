@@ -20,7 +20,7 @@ const MainPackageDetails = ({info}) => {
               </div>
                 <Card.Body>
                     <div className="card-wrap">
-                    <div className="d-flex justify-content-between mb-2">
+                    <div className="card_info_stay d-flex justify-content-between mb-2">
                         <p> <strong> $ {info.price}</strong> /per person</p>
                         <div className="d-flex ">
                             <FontAwesomeIcon className="mt-1 me-2 support-color"  icon={faCalendarWeek} /> 

@@ -49,3 +49,11 @@
   color: #262339;
   margin-right: 10px;
 }
+@media screen and (min-width: 768px) {
+  .about-img1 > img , .about-img2 > img{
+    width:100%;
+  }
+  .about-wrapper-right.section-head.head-left p{
+    font-size: 12px;
+  }
+}

@@ -1,8 +1,8 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './MakeAdmin.css';
-import { ToastContainer, toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
 
 
 const MakeAdmin = () => {
@@ -12,7 +12,7 @@ const MakeAdmin = () => {
     const onSubmit = data => {
         console.log(data)
 
-        fetch('https://afternoon-lake-94187.herokuapp.com/makeAdmin', {
+        fetch('https://tourx-travel-agency.herokuapp.com/makeAdmin', {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data)

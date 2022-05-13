@@ -34,8 +34,8 @@ const ConfirmationModal = ({ modalIsOpen, closeModal }) => {
                     <h3>Congratulation</h3>
                     <h5>Your Booking is Confirmed</h5>
                 </div>
-                <div className='text-right'>
-                    <button onClick={closeModal} className='btn support-btn px-3 mb-3'>Close</button>
+                <div className='text-center text-white'>
+                    <button onClick={closeModal} className='btn support-btn px-3 me-3'>Close</button>
                     <button onClick={handleAllOrders} className='btn support-btn px-3'>See All Orders</button>
                 </div>
             </Modal>

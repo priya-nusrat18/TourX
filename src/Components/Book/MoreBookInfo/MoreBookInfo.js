@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import  Fade  from "react-reveal/Fade";
 import "./MoreBookInfo.css";
+
 const MoreBookInfo = () => {
   return (
     <div className="p-timeline mt-5">

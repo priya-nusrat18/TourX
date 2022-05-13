@@ -7,7 +7,7 @@ const ShowBookingList = () => {
     const [orderList, setOrderList] = useState([]);
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     useEffect(() => {
-        fetch('https://afternoon-lake-94187.herokuapp.com/showBookList', {
+        fetch('https://tourx-travel-agency.herokuapp.com/showBookList', {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify({ email: loggedInUser.email })
@@ -25,7 +25,7 @@ const ShowBookingList = () => {
             updateId: id,
             status: event.target.value
         }
-        fetch('https://afternoon-lake-94187.herokuapp.com/updateStatus', {
+        fetch('https://tourx-travel-agency.herokuapp.com/updateStatus', {
             method: 'PATCH',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(updateData)

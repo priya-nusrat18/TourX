@@ -1,9 +1,9 @@
+import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
-import './ManagePackage.css'
 import swal from 'sweetalert';
+import './ManagePackage.css';
 
 
 const ManagePackage = () => {
@@ -11,7 +11,7 @@ const ManagePackage = () => {
 
     useEffect(() => {
 
-        fetch('https://afternoon-lake-94187.herokuapp.com/showPackage')
+        fetch('https://tourx-travel-agency.herokuapp.com/showPackage')
             .then(res => res.json())
             .then(data => {
                 setManageServices(data)
@@ -29,7 +29,7 @@ const ManagePackage = () => {
           })
           .then((willDelete) => {
             if (willDelete) {
-                fetch(`https://afternoon-lake-94187.herokuapp.com/deletePackage/${id}`,{
+                fetch(`https://tourx-travel-agency.herokuapp.com/deletePackage/${id}`,{
                     method:'DELETE'
                 })
                 .then(res => res.json())

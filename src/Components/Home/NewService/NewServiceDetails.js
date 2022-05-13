@@ -18,7 +18,7 @@ const NewServiceDetails = ({info}) => {
           <img src={info.img} className="img-fluid card-img" alt="" />
           </div>
             <Card.Body>
-                <div className="d-flex justify-content-between mb-2">
+                <div className="card_info_stay2 d-flex justify-content-between mb-2">
                     <p> <strong> $ {info.price}</strong> /per person</p>
                     
                 </div>
@@ -30,7 +30,7 @@ const NewServiceDetails = ({info}) => {
                         <FontAwesomeIcon className="mt-1 me-2 text-rating"  icon={faStar} />
                         <strong className="rating-text">+13k Rating</strong>
                         </div>
-                <button className="support-btn my-3" onClick={() => handleCheckOut(info._id)} >BOOK NOW</button>
+                <button className="support-btn my-2" onClick={() => handleCheckOut(info._id)} >BOOK NOW</button>
              
             </Card.Body>
         </Card>

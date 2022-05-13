@@ -1,10 +1,10 @@
-import React , {useState}  from 'react';
-import { useForm } from 'react-hook-form';
-import './AddPackage.css'
 import axios from 'axios';
+import React, { useState } from 'react';
+import { useForm } from 'react-hook-form';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import './AddPackage.css';
 
-import { ToastContainer, toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
 
 const AddPackage = () => {
     
@@ -40,7 +40,7 @@ const AddPackage = () => {
             img: imgUrl,
     }
 
-    fetch('https://afternoon-lake-94187.herokuapp.com/addPackage', {
+    fetch('https://tourx-travel-agency.herokuapp.com/addPackage', {
         method: 'POST',
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newPackageData)

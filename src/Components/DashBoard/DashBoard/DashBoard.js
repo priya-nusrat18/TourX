@@ -1,16 +1,16 @@
-import React , {useContext , useState, useEffect} from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Col } from 'react-bootstrap';
-import { Switch, useRouteMatch , Route} from 'react-router';
+import { Route, Switch, useRouteMatch } from 'react-router';
+import { UserContext } from '../../../App';
+import loader from '../../../image/flight-loader.gif';
 import AddPackage from '../DashBoardPages/AddPackage/AddPackage';
+import CustomerOrderList from '../DashBoardPages/CustomerOrderList/CustomerOrderList';
 import GiveReview from '../DashBoardPages/GiveReview/GiveReview';
 import MakeAdmin from '../DashBoardPages/MakeAdmin/MakeAdmin';
 import ManagePackage from '../DashBoardPages/ManagePackage/ManagePackage';
+import Profile from '../DashBoardPages/Profile/Profile';
 import ShowBookingList from '../DashBoardPages/ShowBookingList/ShowBookingList';
 import SideBar from '../SideBar/SideBar';
-import {UserContext} from '../../../App'
-import Profile from '../DashBoardPages/Profile/Profile';
-import CustomerOrderList from '../DashBoardPages/CustomerOrderList/CustomerOrderList'
-import loader from '../../../image/flight-loader.gif'
 
    
 
@@ -21,7 +21,7 @@ const DashBoard = () => {
     const [spinner, setSpinner] = useState(false);
 
     useEffect(() => {
-      fetch("https://afternoon-lake-94187.herokuapp.com/isAdmin", {
+      fetch("https://tourx-travel-agency.herokuapp.com/isAdmin", {
         method: "POST",
         headers: {
           "content-type": "application/json",

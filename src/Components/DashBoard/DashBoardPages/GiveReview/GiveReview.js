@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
-import './GiveReview.css';
-import { useForm  } from "react-hook-form";
+import { useForm } from "react-hook-form";
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { UserContext } from '../../../../App';
-import { ToastContainer, toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
+import './GiveReview.css';
 
 const GiveReview = () => {
 
@@ -18,7 +18,7 @@ const GiveReview = () => {
         const reviewInfo = {...data}
         reviewInfo.img = userImg;
 
-        fetch('https://afternoon-lake-94187.herokuapp.com/addReview', {
+        fetch('https://tourx-travel-agency.herokuapp.com/addReview', {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(reviewInfo)

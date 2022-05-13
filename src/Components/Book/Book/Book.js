@@ -18,11 +18,11 @@ const Book = () => {
         <MainNavbar />
         <Container>
             <Row>
-                <Col lg={8} md={8} sm={6} col={12}>
+                <Col lg={8} md={8} sm={12} col={12}>
                     <BookInfo id={id} />
                     <MoreBookInfo />
                     </Col>
-                <Col lg={4} md={4} sm={6} col={12}>
+                <Col lg={4} md={4} sm={12} col={12}>
                     <BookForm  id={id} />
                     <PopularPackage />
                 </Col>

@@ -89,7 +89,7 @@ a.text-white.nav-text:hover {
   align-items: center;
 }
 
-span {
+nav > ul > li > span {
   margin-left: 16px;
 }
 

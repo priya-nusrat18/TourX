@@ -7,7 +7,10 @@
   border-radius: 5px;
 }
 
-
+.info-title {
+  height: 60px;
+  overflow: hidden;
+}
 .info-card {
   background-color: rgba(48,79,71,.9);
   box-shadow: 0 0 64px rgb(17 17 17 / 10%);
@@ -17,4 +20,13 @@
 .info-icon {
   color: #FF7F47 !important;
   font-size: 35px;
+}
+@media screen and (max-width:768px){
+  .info-title > small {
+    display:none
+}
+.info-title {
+  height: 40px;
+  overflow: hidden;
+}
 }

@@ -1,17 +1,16 @@
-import React, { useState , useEffect } from "react";
-import "./BookInfo.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarker, faStar } from "@fortawesome/free-solid-svg-icons";
-import Slide from  'react-reveal/Slide';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, { useEffect, useState } from "react";
+import Slide from 'react-reveal/Slide';
+import "./BookInfo.css";
 
-  
 const BookInfo = ({id}) => {
   const [packageDetails , setPackageDetails] =useState({})
   const {name, title , img}=packageDetails;
 
   useEffect(() => {
 
-    fetch(`https://afternoon-lake-94187.herokuapp.com/package/${id}`)
+    fetch(`https://tourx-travel-agency.herokuapp.com/package/${id}`)
         .then(res => res.json())
         .then(data => {
             setPackageDetails(data)

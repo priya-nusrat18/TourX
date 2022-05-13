@@ -1,13 +1,13 @@
-import React , {useState , useEffect} from 'react';
-import NewServiceDetails from './NewServiceDetails';
+import React, { useEffect, useState } from 'react';
 import Carousel from 'react-elastic-carousel';
-import loader from '../../../image/flight-loader.gif'
+import loader from '../../../image/flight-loader.gif';
+import NewServiceDetails from './NewServiceDetails';
 const NewService = () => {
     const [spinner, setSpinner] = useState(false);
     const [tourPackage, setTourPackage] = useState([])
     useEffect(() => {
 
-        fetch('https://afternoon-lake-94187.herokuapp.com/showPackage')
+        fetch('https://tourx-travel-agency.herokuapp.com/showPackage')
             .then(res => res.json())
             .then(data => {
                 const tourData = data.slice(9,15)

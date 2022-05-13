@@ -1,37 +1,43 @@
 import React from 'react';
 import './PopularPackage.css'
 import PopularPackageDetails from './PopularPackageDetails';
+import image1 from '../../../image/card1.png'
+import image2 from '../../../image/card2.png'
 
 const PopularPackage = () => {
     const tourInfo= [
         {
-            price:180,
+            image:image1,
+            price:170,
             stayInfo:'5 Days / 6 night',
-            place:'Amalfi Costa, Italy',
+            place:'Machu Picchu, Peru',
             rating:'8k + Rating'
         },
-        {
-            price:180,
-            stayInfo:'5 Days / 6 night',
+        {   image:image2,
+            price:160,
+            stayInfo:'3 Days / 4 night',
             place:'Amalfi Costa, Italy',
-            rating:'8k + Rating'
+            rating:'4k + Rating'
         },
         {
-            price:180,
-            stayInfo:'5 Days / 6 night',
-            place:'Amalfi Costa, Italy',
-            rating:'8k + Rating'
+            image:image1,
+            price:130,
+            stayInfo:'2 Days / 3 night',
+            place:'Great Wall, China',
+            rating:'5k + Rating'
         },
-        {
-            price:180,
+        {   
+            image:image2,
+            price:100,
             stayInfo:'5 Days / 6 night',
-            place:'Amalfi Costa, Italy',
-            rating:'8k + Rating'
+            place:'Pyramids of Giza, Egypt',
+            rating:'3k + Rating'
         },
-        {
-            price:180,
-            stayInfo:'5 Days / 6 night',
-            place:'Amalfi Costa, Italy',
+        {   
+            image:image1,
+            price:120,
+            stayInfo:'3 Days / 3 night',
+            place:'The Colosseum, Rome',
             rating:'8k + Rating'
         }
     ]

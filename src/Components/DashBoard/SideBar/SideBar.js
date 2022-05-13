@@ -1,19 +1,11 @@
 import {
-  faBars,
-  faPlus,
-  faListOl,
-  faCommentDots,
-  faUserPlus,
-  faUser,
-  faHome,
-  faGripHorizontal,
-  faTimes,
+    faBars, faCommentDots, faGripHorizontal, faHome, faListOl, faPlus, faTimes, faUser, faUserPlus
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useState, useEffect , useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { UserContext } from '../../../App';
 import "./SideBar.css";
-import {UserContext} from '../../../App'
 
 
 const SideBar = ({url}) => {
@@ -23,7 +15,7 @@ const SideBar = ({url}) => {
   const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
-    fetch("https://afternoon-lake-94187.herokuapp.com/isAdmin", {
+    fetch("https://tourx-travel-agency.herokuapp.com/isAdmin", {
       method: "POST",
       headers: {
         "content-type": "application/json",

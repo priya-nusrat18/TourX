@@ -13,13 +13,13 @@ const About = () => {
         <div className="row">
           <div className="col-md-7 col-sm-12 col-12">
             <div className="about-wrapper-left">
-                <Slide left>
-              <div className="about-img1 d-md-inline-block d-sm-inline-block d-none">
-                <img src={about1} alt="" />
-              </div>
-              <div className="about-img2 d-md-inline-block d-sm-inline-block d-none">
-                <img src={about2} alt="" />
-              </div>
+              <Slide left>
+                <div className="about-img1 d-md-inline-block d-sm-inline-block d-none">
+                  <img src={about1} alt="" />
+                </div>
+                <div className="about-img2 d-md-inline-block d-sm-inline-block d-none">
+                  <img src={about2} alt="" />
+                </div>
               </Slide>
             </div>
           </div>
@@ -42,26 +42,26 @@ const About = () => {
 
               <ul className=" pt-3">
                 <li className="d-flex">
-                    <FontAwesomeIcon icon={faCheck} className="align-self-center me-2 text-black" />
-                    Specilaized Bilingual Guide
+                  <FontAwesomeIcon icon={faCheck} className="align-self-center me-2 text-black" />
+                  Specilaized Bilingual Guide
                 </li>
                 <li className="d-flex">
-                <FontAwesomeIcon icon={faCheck} className="align-self-center me-2 text-black" />
-                    Best Tour Explainer
+                  <FontAwesomeIcon icon={faCheck} className="align-self-center me-2 text-black" />
+                  Best Tour Explainer
                 </li>
                 <li className="d-flex">
-                <FontAwesomeIcon icon={faCheck} className="align-self-center me-2 text-black" />
-                    Specilaized Service for you
+                  <FontAwesomeIcon icon={faCheck} className="align-self-center me-2 text-black" />
+                  Specilaized Service for you
                 </li>
                 <li className="d-flex">
-                <FontAwesomeIcon icon={faCheck} className="align-self-center me-2 text-black" />
-                    Best Package for you
+                  <FontAwesomeIcon icon={faCheck} className="align-self-center me-2 text-black" />
+                  Best Package for you
                 </li>
                 <li className="d-flex">
-                <FontAwesomeIcon icon={faCheck} className="align-self-center me-2 text-black" />
-                    Our Expert Guide
+                  <FontAwesomeIcon icon={faCheck} className="align-self-center me-2 text-black" />
+                  Our Expert Guide
                 </li>
-            </ul>
+              </ul>
               <button className="my-3 support-btn">Read More</button>
             </div>
           </div>

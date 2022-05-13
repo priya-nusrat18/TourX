@@ -26,6 +26,15 @@ nav.navbar.navbar-expand-lg.navbar-light {
   border-bottom: 2px solid #ff7f47;
   width: fit-content;
 }
+
+/* #basic-navbar-nav {
+  background: #304F47;
+  padding: 20px 0px;
+}
+
+#basic-navbar-nav a.nav-link {
+  color: #fff !important;
+} */
 @media only screen and (min-width: 992px) {
   .logo {
     max-width: 150px;

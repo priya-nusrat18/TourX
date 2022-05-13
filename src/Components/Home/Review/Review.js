@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
-import "./Review.css";
-import ReviewDeatils from "./ReviewDeatils";
+import React, { useEffect, useState } from "react";
+import SwiperCore, { Autoplay, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
 import "swiper/swiper.min.css";
-import SwiperCore, { Autoplay, Pagination } from "swiper";
 import loader from "../../../image/flight-loader.gif";
+import "./Review.css";
+import ReviewDeatils from "./ReviewDeatils";
 
 const Review = () => {
   SwiperCore.use([Pagination, Autoplay]);
@@ -13,7 +13,7 @@ const Review = () => {
   const [spinner, setSpinner] = useState(false);
 
   useEffect(() => {
-    fetch("https://afternoon-lake-94187.herokuapp.com/showReview")
+    fetch("https://tourx-travel-agency.herokuapp.com/showReview")
       .then((res) => res.json())
       .then((data) => {
         setReviews(data);

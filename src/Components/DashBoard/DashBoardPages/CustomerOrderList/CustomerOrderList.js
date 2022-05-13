@@ -1,8 +1,7 @@
-import React, { useContext, useEffect } from 'react';
-import './CustomerOrderList.css';
-import { useState } from 'react';
-import { UserContext } from '../../../../App';
+import React, { useContext, useEffect, useState } from 'react';
 import { Row } from 'react-bootstrap';
+import { UserContext } from '../../../../App';
+import './CustomerOrderList.css';
 import CustomerOrderListDetails from './CustomerOrderListDetails';
 
 const CustomerOrderList = () => {
@@ -12,7 +11,7 @@ const CustomerOrderList = () => {
 
     console.log(loggedInUser);
     useEffect(() => {
-        fetch('https://afternoon-lake-94187.herokuapp.com/showBookList', {
+        fetch('https://tourx-travel-agency.herokuapp.com/showBookList', {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify({ email: loggedInUser.email })

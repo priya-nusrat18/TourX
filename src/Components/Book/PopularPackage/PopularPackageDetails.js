@@ -8,7 +8,7 @@ const PopularPackageDetails = ({info}) => {
     return (
         <div className="popular-card">
             <div className="popular-card-wrap d-flex align-items-center mb-4">
-                    <img src={cardImg} alt="" className="card-img2" />
+                    <img src={info.image} alt="" className="card-img2" />
                     <div className="ppular-card-content">
                     <div className="d-flex ">
                             <FontAwesomeIcon className="mt-1 me-2 support-color"  icon={faCalendarWeek} /> 

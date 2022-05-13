@@ -68,3 +68,8 @@ button.support-btn:hover::before{
     -webkit-clip-path: circle(150% at 0% 0%);
     clip-path: circle(150% at 0% 0%);
 }
+@media screen and (max-width: 375px) {
+  h1.react-reveal.slide-text1.text-white {
+      font-size: 40px !important;
+  }
+}
