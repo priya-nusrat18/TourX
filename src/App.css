@@ -88,9 +88,6 @@ a {
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  .container {
-    width: 450px;
-  }
   .about-wrapper-left .about-img2 {
     float: right;
     padding: 20px;
